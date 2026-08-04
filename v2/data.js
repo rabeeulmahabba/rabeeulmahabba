@@ -12,16 +12,14 @@ const CONFIG = {
   festDate: "2026-08-23T08:00:00",   // countdown target (ISO format)
 
   // ---- Hero slider slides ----
-  // `image` is the background photo path (relative to index.html).
-  // Slide 1 uses the official fest poster — its overlay text is
-  // hidden automatically in script.js/style.css since the poster
-  // already carries its own title & date design.
+  // Replace `image` with a real photo path once you have one,
+  // e.g. "images/hero1.jpg". Until then it uses a gradient.
   heroSlides: [
     {
       kicker: "Meelad Fest 2026",
       title: "RABEEUL MAHABBA",
       subtitle: "a celebration of love for the Prophet ﷺ",
-      image: "image/hero-poster.jpg"
+      image: null
     },
     {
       kicker: "60+ ഇനങ്ങൾ",
@@ -30,7 +28,7 @@ const CONFIG = {
       image: null
     },
     {
-      kicker: "ഓഗസ്റ്റ് 23 – 31",
+      kicker: "ഓഗസ്റ്റ് 23",
       title: "എല്ലാവരെയും സ്വാഗതം ചെയ്യുന്നു",
       subtitle: "കുടുംബമായി, കൂട്ടുകാരുമായി ഒരുമിച്ചു ചേരൂ",
       image: null
@@ -46,7 +44,7 @@ const CONFIG = {
   // 2. File → Share → Publish to web → choose this sheet → CSV → Publish
   // 3. Paste the CSV link below between the quotes.
   // Leave it empty ("") to use the sample data in FALLBACK_RESULTS below.
-  resultsSheetCsvUrl: "",
+  resultsSheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRaDMeaLVXCnhOAUEpnHSaD0ClUyzidTLZvmttFx5aHdkMl_qYotZhElRVH5ij-qwC77yK5joNKuk4m/pub?gid=0&single=true&output=csv",
 
   // Used only when resultsSheetCsvUrl is empty, or the fetch fails —
   // so the page always has something to show while you're setting up.
