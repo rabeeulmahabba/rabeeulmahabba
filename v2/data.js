@@ -21,7 +21,7 @@ const CONFIG = {
       kicker: "Meelad Fest 2026",
       title: "RABEEUL MAHABBA",
       subtitle: "a celebration of love for the Prophet ﷺ",
-      image: "images/hero-poster.jpg"
+      image: "image/hero-poster.jpg"
     },
     {
       kicker: "60+ ഇനങ്ങൾ",
