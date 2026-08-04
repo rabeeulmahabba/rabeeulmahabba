@@ -211,3 +211,74 @@ footer .f-note{ font-size:11.5px; color:rgba(250,249,244,0.5); }
   .hero-slider{ height:82vh; }
   .hero-cta{ bottom:56px; }
 }
+.hero,
+#page-results{
+    position:relative;
+    overflow:hidden;
+}
+
+.bg-animation{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+}
+
+.spiral-bg{
+    position:absolute;
+    right:-140px;
+    top:30px;
+
+    width:620px;
+    opacity:.045;
+
+    animation:spiralRotate 60s linear infinite;
+}
+
+.logo-bg{
+    position:absolute;
+
+    right:40px;
+    top:150px;
+
+    width:240px;
+
+    opacity:.08;
+}
+
+.spiral-bg img,
+.logo-bg img{
+    width:100%;
+    display:block;
+}
+
+.hero .wrap,
+#page-results .wrap{
+    position:relative;
+    z-index:2;
+}
+
+@keyframes spiralRotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@media(max-width:768px){
+
+.spiral-bg{
+width:350px;
+right:-80px;
+top:90px;
+}
+
+.logo-bg{
+width:150px;
+right:20px;
+top:170px;
+}
+
+}
